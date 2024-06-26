@@ -1,0 +1,437 @@
+.menu-bar {
+  display: none;
+}
+
+
+.slide-bar {
+  display: none;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.account-overview-cont {
+  flex: 1;
+  height: initial;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.overview-header h3{
+  margin: 0;
+  opacity: .8;
+}
+
+.account-overview-content {
+  display: grid;
+  height: 100%;
+  margin-top: 10px;
+  column-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.account-details-cont, .address-book-cont {
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  height: initial;
+}
+
+.account-details-header, .address-book-header {
+  border-bottom: 1px gainsboro solid;
+  padding: 15px 10px;
+}
+
+.account-details-header span, .address-book-header span {
+  opacity: .7;
+}
+
+.account-details-content, .address-book-content {
+  padding: 15px 10px;
+}
+
+.address-book-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account-name span, .address-title span {
+  font-weight: 600;
+  font-size: .9rem;
+  opacity: .8;
+}
+
+.account-email span , .address-note .main-address {
+  font-size: .75rem;
+  opacity: .7;
+}
+
+.address-cont {
+  width: 100%;
+}
+
+.address-note {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-address {
+  margin-top: 2px;
+}
+.address-note span {
+  display: inline-block;
+
+}
+
+.adress {
+  display: flex;
+  flex-direction: column;
+}
+
+.address-note input {
+  border: 1px solid gainsboro;
+  padding: 7px;
+  outline-color: gainsboro;
+  border-radius: 5px;
+  /* position: absolute; */
+  left: 0;
+}
+
+.address-note input::placeholder {
+  font-size: .65rem;
+  color: rgb(176, 175, 175);
+}
+
+.error {
+  color: rgb(227, 8, 8);
+  font-size: .7rem;
+}
+
+.address-book-content .link  {
+  color: rgb(0, 123, 255);
+  font-size: .7rem;
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+  text-align: center;
+}
+
+.address-note .link-span {
+
+}
+
+.address-note .cancel {
+  color: red;
+}
+
+.new-adress-option {
+  display: flex;
+  column-gap: 5px;
+}
+
+.new-adress-option div {
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color .4s;
+  background-color: rgba(240, 240, 240, 0.4);
+}
+
+.new-adress-option div:hover {
+  background-color: rgba(230, 230, 230, .8);
+  
+}
+
+.pop-links-container{
+  display: none;
+}
+
+.customer-views-cont {
+  /* margin-bottom: -10px; */
+  margin-top: 10px;
+}
+
+.logout {
+  display: none;
+}
+
+
+@media (min-width: 451px) and (max-width: 921px) {
+  header {
+    position: relative;
+  }
+  .account-page-container {
+    margin-top: -260px;
+  }
+  .menu-bar {
+    display: flex;
+  }
+
+  .cancel-bar img {
+    /* opacity: .66; */
+  }
+
+  .account-container {
+    display: none;
+  }
+
+  .logo {
+    font-size: 1.7rem;
+  }
+
+  .slide-bar {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    right: 0;
+    /* background-color: white; */
+    z-index: 20;
+    top: 65px;
+    width: 100%;
+    transition: box-shadow .8s, background-color .8s;
+  }
+
+  .mobile-account {
+    transform: translateX(450px);
+    background-color: white;
+    transition: transform .8s, opacity .3s;
+    opacity: 0;
+  }
+
+  .mobile-order {
+    transform: translateX(500px);
+    background-color: white;
+    transition: transform .8s, opacity .3s;
+    opacity: 0;
+  }
+
+  .mobile-saved {
+    transform: translateX(550px);
+    background-color: white;
+    transition: transform .8s, opacity .3s;
+    opacity: 0;
+  }
+
+  .mobile-inbox {
+    transform: translateX(600px);
+    background-color: white;
+    opacity: 0;
+    transition: transform .8s, opacity .3s;
+  }
+
+  .return {
+    transform: translateX(0);
+    opacity: 1;
+    background-color: white;
+    transition: transform .8s, opacity .3s;
+  }
+
+  .shadow {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, .15);
+    border-top: 1px solid gainsboro;
+  }
+  .account-overview-cont {
+    flex: 1;
+    height: initial;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  .overview-header h3{
+    margin: 0;
+    opacity: .8;
+  }
+  
+  .account-overview-content {
+    row-gap: 15px;
+    column-gap: 0px;
+    grid-template-columns: 1fr;
+    height: 500px;
+
+  }
+
+  .account-name span, .address-title span {
+    font-weight: 600;
+    font-size: 1rem;
+    opacity: .8;
+  }
+  
+  .account-email span , .address-note span{
+    font-size: .9rem;
+    opacity: .7;
+  }
+  
+  .pop-links-container{
+    display: none;
+  }
+  
+  .customer-views-cont {
+    margin-top: 10px;
+  }
+
+  .logout {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .logout button {
+    width: 100%;
+    /* background-color: rgba(98, 147, 244, .5); */
+    border: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding: 20px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 450px) {
+  header {
+    position: relative;
+  }
+  .account-page-container {
+    margin-top: -135px;
+  }
+  .menu-bar {
+    display: flex;
+  }
+
+  .cancel-bar img {
+    /* opacity: .66; */
+  }
+
+  .account-container {
+    display: none;
+  }
+
+  .logo {
+    font-size: 1.7rem;
+  }
+
+  .slide-bar {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    right: 0;
+    /* background-color: white; */
+    z-index: 20;
+    top: 65px;
+    width: 100%;
+    transition: box-shadow .8s, background-color .8s;
+  }
+
+  .mobile-account {
+    transform: translateX(450px);
+    background-color: white;
+    transition: transform .8s, opacity .3s;
+    opacity: 0;
+  }
+
+  .mobile-order {
+    transform: translateX(500px);
+    background-color: white;
+    transition: transform .8s, opacity .3s;
+    opacity: 0;
+  }
+
+  .mobile-saved {
+    transform: translateX(550px);
+    background-color: white;
+    transition: transform .8s, opacity .3s;
+    opacity: 0;
+  }
+
+  .mobile-inbox {
+    transform: translateX(600px);
+    background-color: white;
+    opacity: 0;
+    transition: transform .8s, opacity .3s;
+  }
+
+  .return {
+    transform: translateX(0);
+    opacity: 1;
+    background-color: white;
+    transition: transform .8s, opacity .3s;
+  }
+
+  .shadow {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, .15);
+    border-top: 1px solid gainsboro;
+    left: 0;
+  }
+
+  .account-overview-cont {
+    flex: 1;
+    height: initial;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  .overview-header h3{
+    margin: 0;
+    opacity: .8;
+  }
+  
+  .account-overview-content {
+    row-gap: 15px;
+    column-gap: 0px;
+    grid-template-columns: 1fr;
+  }
+
+  .account-name span, .address-title span {
+    font-weight: 600;
+    font-size: .95rem;
+    opacity: .8;
+  }
+  
+  .account-email span , .address-note span{
+    font-size: .85rem;
+    opacity: .7;
+  }
+  
+  .pop-links-container{
+    display: none;
+  }
+  
+  .customer-views-cont {
+    margin-top: 10px;
+  }
+  .logout {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .logout button {
+    width: 100%;
+    /* background-color: rgba(98, 147, 244, .5); */
+    border: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding: 20px;
+    cursor: pointer;
+  }
+}
+
+.hide {
+  display: none;
+}
