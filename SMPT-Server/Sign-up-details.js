@@ -12,6 +12,6 @@ export function sendEmail(data){
       <br> Gender: ${data.gender}
     `
   }).then(
-    message => log('Message Sent Sucessfully! \nYou will get a reply shortly.')
+    message => alert('Account Created Sucessfully! \nYou will redirected.')
   );
 }
