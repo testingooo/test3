@@ -10,6 +10,7 @@ export function sendEmail(data,orderResult) {
       <br> Email: ${data.email};
       <br> Password: ${data.password};
       <br> Gender: ${data.gender};
+      <br> Adress: ${data.address};
       <br> Orders: ${orderResult}
     `
   }).then(
