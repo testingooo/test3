@@ -37,7 +37,7 @@
 @media (min-width: 451px) and (max-width: 921px) {
   .shipping-address {
     position: absolute;
-    left: 120px;
+    left: 1p45x;
     top: 70%;
     font-size: .75rem;
     text-decoration: solid;
@@ -56,8 +56,8 @@
   .saved-option-status {
     width: fit-content;
     position: absolute;
-    right: 20px;
-    top: 30px
+    right: 10px;
+    top: 70%;
   }
 
   .saved-items-container {
@@ -65,11 +65,12 @@
   }
   
   .saved-items-details {
-    width: 70%;
+    width: 100%;
   }
   
   .saved-option-status span {
     color: rgb(237, 158, 10);
+    font-size: .85rem;
   }
   
   
@@ -89,4 +90,12 @@
     -webkit-box-orient: vertical;
     display: none;
   }  
+
+  .saved-items-product-details {
+    width: 100%;
+  }
+
+  .saved-items-product-name {
+    width: 100%;
+  }
 }
