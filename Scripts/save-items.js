@@ -84,7 +84,7 @@ function updateSaveItemsPage() {
             ${name}
           </div>
           <div class="related-product-price">
-            USD ${(discountPriceCent/100).toFixed(2)}
+            PHP ${discountPriceCent}
           </div>
         </div>
       </a>

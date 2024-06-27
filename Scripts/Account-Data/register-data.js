@@ -1,9 +1,16 @@
-export const registerData = JSON.parse(localStorage.getItem('registerData')) ||
+export const registerData = JSON.parse(localStorage.getItem('registersDatas')) ||
 [{
   email: 'wardude@gmail.com',
   password: 'wardfude',
   firstName: 'Wari',
   lastName: 'Ganiu',
+  gender: 'Male',
+  address: 'Shipping address not available'
+},{
+  email: 'wardude5@gmail.com',
+  password: 'wardude5',
+  firstName: 'Waris',
+  lastName: 'Gniu',
   gender: 'Male',
   address: 'Shipping address not available'
 }] 
@@ -17,16 +24,9 @@ export const registerData = JSON.parse(localStorage.getItem('registerData')) ||
 //   address: 'Shipping address not available'
 // })
 
-// registerData.push({
-//   email: 'wardude5@gmail.com',
-//   password: 'wardude5',
-//   firstName: 'Waris',
-//   lastName: 'Gniu',
-//   gender: 'Male',
-//   address: 'Shipping address not available'
-// })
-saveRegisterData()
+// registerData.push(
+// saveRegisterData()
 
 export function saveRegisterData() {
-  localStorage.setItem('registerData', JSON.stringify(registerData))
+  localStorage.setItem('registersDatas', JSON.stringify(registerData))
 }

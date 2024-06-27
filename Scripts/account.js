@@ -47,7 +47,7 @@ document.querySelector('.customer-views-product-grid')
           ${name}
         </div>
         <div class="related-product-price">
-          USD ${(discountPriceCent/100).toFixed(2)}
+          PHP ${discountPriceCent}
         </div>
         <button class="add-to-cart">Buy Now</button>
       </div>

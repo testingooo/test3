@@ -44,3 +44,7 @@
     width: 100px;
   }  
 }
+
+.seller-container {
+  cursor: not-allowed!important;
+}

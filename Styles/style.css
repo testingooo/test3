@@ -138,6 +138,10 @@ nav {
   color: rgba(0, 0, 0, 0.81);
 }
 
+.seller-container {
+  cursor: not-allowed!important;
+}
+
 .top-categories-container {
   margin: 88px 1% 0 1%;
   display: flex;

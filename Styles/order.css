@@ -99,3 +99,7 @@
     width: 100%;
   }
 }
+
+.seller-container {
+  cursor: not-allowed!important;
+}

@@ -116,8 +116,8 @@ document.querySelector('.js-related-product-grid')
         <img src="${product.displayImage}" alt="">
         <div class="related-product-name">${product.name}</div>
         <div class="related-product-price">
-          <div class="discount-price">PHP ${(product.discountPriceCent/100).toFixed(2)}</div>
-          <span class="related-price">PHP ${(product.priceCent/100).toFixed(2)}</span> 
+          <div class="discount-price">PHP ${product.discountPriceCent}</div>
+          <span class="related-price">PHP ${product.priceCent}</span> 
           <span class="price-percentage">${product.soldNum} Sold</span>
         </div>
       </div>

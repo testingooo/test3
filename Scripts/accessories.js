@@ -21,7 +21,7 @@ document.querySelector('.category-products-grid')
           <div class="category-product-name">
             ${name}
           </div>
-          <div class="category-product-price">$${(priceCent/100).toFixed(2)}</div>
+          <div class="category-product-price">₱${priceCent}</div>
           <span>${brand}</span>
         </div>
       </a>

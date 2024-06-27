@@ -646,3 +646,7 @@ nav {
   
   
 }
+
+.seller-container {
+  cursor: not-allowed!important;
+}

@@ -1230,6 +1230,9 @@ footer h4 {
   
 }
 
+.seller-container {
+  cursor: not-allowed!important;
+}
 
 .hide {
   display: none;

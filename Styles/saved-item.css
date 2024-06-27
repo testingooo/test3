@@ -1005,6 +1005,9 @@ nav {
 
   
 }
+.seller-container {
+  cursor: not-allowed!important;
+}
 
 .hide {
   display: none;

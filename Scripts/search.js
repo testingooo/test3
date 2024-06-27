@@ -70,7 +70,7 @@ export function searchFun() {
           <img src="${displayImage}" class="product-image" alt="">
           <div class="name">${name}</div>
           <div class="product-details">
-            <div class="price">$${(discountPriceCent/100).toFixed(2)}</div>
+            <div class="price">₱${discountPriceCent}</div>
             <div class="sold-rate">${soldNum}sold</div>
           </div>
         </div>
@@ -106,7 +106,7 @@ document.querySelector('.related-products')
             ${name}
           </div>
           <div class="related-product-price">
-            USD ${(discountPriceCent/100).toFixed(2)}
+            PHP ${discountPriceCent}
           </div>
           <button class="add-to-cart">Buy Now</button>
         </div>

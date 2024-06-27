@@ -216,3 +216,6 @@ document.querySelector('.checkout').addEventListener('click', () => {
     window.location.href = 'order.html'
   },2000)
 })
+
+
+console.log(registerData);
