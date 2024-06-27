@@ -117,3 +117,6 @@ document.querySelectorAll('.link').forEach(elem => {
   })
 })
 
+if (browerData) {
+  location.replace('index.html')
+}
