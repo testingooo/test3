@@ -1,13 +1,13 @@
 export const productCategories = [{
-  name: 'AirGun',
-  image: 'https://fxairguns.com/wp-content/uploads/2024/05/FX-Rds-walnut.jpg',
-  id: 'odwnsc-xsjxs',
-  link: 'airgun.html'
-},{
   name: 'Accessories',
   image: 'Images/accessories.webp',
   id: '22wwss-nsks',
   link: 'accessories.html'
+},{
+  name: 'AirGun',
+  image: 'https://fxairguns.com/wp-content/uploads/2019/02/us5.jpg',
+  id: 'odwnsc-xsjxs',
+  link: 'airgun.html'
 },{
   name: 'Baby',
   image: 'https://i.etsystatic.com/27025196/c/2025/1611/0/0/il/d7ed4a/4993068433/il_680x540.4993068433_99hf.jpg',

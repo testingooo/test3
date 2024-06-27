@@ -75,7 +75,7 @@ document.querySelector('.js-product-container')
           <div class="line5 hide">${productMatch.description.line5}</div>
         </div>
 
-        <div class="description-note hide">Learn more about this item</div>
+        <div class="description-note hide">Learn more</div>
       </div>
       <div class="shipping-policies">
         <div class="display">
@@ -188,16 +188,16 @@ document.querySelector('.description-display')
     document.querySelectorAll('.line3, .line4, .line5').forEach(elem => {
       elem.classList.add('hide')
     });
-    document.querySelector('.description-note').innerHTML = 'Learn more about this item'
+    document.querySelector('.description-note').innerHTML = 'Learn more'
     document.querySelector('.description-note').classList.toggle('hide');
   });
 
 document.querySelector('.description-note')
   .addEventListener('click', () => {
-    if (document.querySelector('.description-note').innerHTML === 'Learn more about this item') {
+    if (document.querySelector('.description-note').innerHTML === 'Learn more') {
       document.querySelector('.description-note').innerHTML = 'Show less'
     } else {
-      document.querySelector('.description-note').innerHTML = 'Learn more about this item'
+      document.querySelector('.description-note').innerHTML = 'Learn more'
     };
 
     document.querySelector('.line2').classList.toggle('blurline');

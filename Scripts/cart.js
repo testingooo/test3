@@ -38,21 +38,25 @@ function updateCartPage() {
             <div class="cart-product-name">
               ${productMatch.name}
             </div>
-            <select disabled data-id="${productMatch.id}" class="cart-drop-down-${productMatch.id} cart-drop-down">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-              <option>10</option>
-            </select>
-            <div class="cart-product-options">
-              <div class="save-later" data-id="${productMatch.id}">Save for later</div>
-              <div class="remove js-remove" data-id="${productMatch.id}">Remove</div>
+
+            <div class="drop-cont"> 
+              <select disabled data-id="${productMatch.id}" class="cart-drop-down-${productMatch.id} cart-drop-down">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+
+              <div class="cart-product-options">
+                <div class="save-later" data-id="${productMatch.id}">Save for later</div>
+                <div class="remove js-remove" data-id="${productMatch.id}">Remove</div>
+              </div>
             </div>
           </div>
         </div>
