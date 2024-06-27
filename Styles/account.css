@@ -195,7 +195,7 @@ a {
     z-index: 20;
     top: 65px;
     width: 100%;
-    transition: box-shadow .8s, background-color .8s;
+    transition: box-shadow .01s, background-color .2s;
   }
 
   .mobile-account {

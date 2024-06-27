@@ -31,7 +31,7 @@
 
 @media (max-width: 450px) {
   .image-cont {
-    width: 150px;
+    width: 100px;
     height: 100px;
     margin-bottom: -5px;
     display: flex;
@@ -41,6 +41,6 @@
   
   .category-product-container img {
     object-fit: contain;
-    width: 150px;
+    width: 100px;
   }  
 }

@@ -894,7 +894,10 @@ nav {
   }::-webkit-scrollbar {
     display: none;
   }
-  
+
+  .image-scroll img {
+    width: 25%;
+  }
    
   .display-image {
     position: relative;
@@ -907,6 +910,11 @@ nav {
   
   .display-image .fa-angle-left, .display-image .fa-angle-right {
   display: none;
+  }
+
+  .display-image .fa-heart {
+    top: 0px;
+    right: 0px;
   }
   
   .display-image-cont {
@@ -1002,7 +1010,17 @@ nav {
     border-radius: 10px;
   }
 
+  .description-note {
+    text-align: center;
+  }
 
+  .lines {
+    row-gap: 4px;
+  }
+
+  .lines .line{
+    font-size: .7rem;
+  }
 }
 
 
